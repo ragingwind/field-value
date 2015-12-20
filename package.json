@@ -1,0 +1,49 @@
+{
+  "name": "field-value",
+  "version": "0.0.1",
+  "description": "Pair up objects to field-values",
+  "license": "MIT",
+  "repository": "ragingwind/field-value",
+  "author": {
+    "name": "ragingwind",
+    "email": "ragingwind@gmail.com",
+    "url": "ragingwind.me"
+  },
+  "engines": {
+    "node": ">=0.4.0"
+  },
+  "scripts": {
+    "build": "babel $OPTIONS --presets es2015 ./src --out-dir ./",
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "field-value",
+    "field",
+    "key-valye",
+    "serialize",
+    "deserialize",
+    "querystring",
+    "json"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.3.0",
+    "babel-cli": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "deep-equal": "^1.0.1",
+    "xo": "^0.10.0"
+  },
+  "xo": {
+    "ignores": [
+      "test.js",
+      "index.js"
+    ]
+  },
+  "jshintConfig": {
+    "esnext": true,
+    "node": true
+  }
+}

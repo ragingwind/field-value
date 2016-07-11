@@ -29,7 +29,7 @@ function serialize(target) {
 		throw new TypeError('Invalid type of target');
 	}
 
-	var values = [];
+	let values = [];
 
 	for (let t in target) {
 		if ({}.hasOwnProperty.call(target, t)) {
@@ -50,8 +50,8 @@ function objectify(v) {
 	if (v[0] === '{') {
 		return JSON.parse(extract(v, '}'));
 	} else if (v[0] === '[') {
-		let set = [];
-		let es = extract(v, ']', true);
+		const set = [];
+		const es = extract(v, ']', true);
 
 		if (es[0] === '[' || es[0] === '{') {
 			set.push(objectify(es));
@@ -76,7 +76,7 @@ function deserialize(values) {
 		values = [values];
 	}
 
-	let target = {};
+	const target = {};
 
 	for (const v of values) {
 		const fieldValue = v.split('=', 2);

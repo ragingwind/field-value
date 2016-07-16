@@ -80,4 +80,4 @@ OPTIONS=-w npm run build
 
 ## License
 
-MIT © [ragingwind](http://ragingwind.me)
+MIT © [Jimmy Moon](http://ragingwind.me)

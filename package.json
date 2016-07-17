@@ -1,6 +1,6 @@
 {
   "name": "field-value",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pair up objects to field-values",
   "license": "MIT",
   "repository": "ragingwind/field-value",
